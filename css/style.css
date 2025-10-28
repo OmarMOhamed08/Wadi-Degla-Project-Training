@@ -1,0 +1,247 @@
+@import url(media.css);
+:root{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header1{
+       background:url(../images/banner.jpg);
+       background-size: cover;
+       /* background-attachment:fixed; */
+       height: 90vmin;
+       position: relative;
+}
+.navbar{
+    height: 60px;
+    background:linear-gradient(#000,#666);
+    display: flex;
+    justify-content: space-between;
+}
+.navbar img{
+    margin-inline-start: 2%;
+}
+.nav-tags{
+    width: 500px;
+    height:60px;
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.nav-tags li {
+    padding: 20px;
+    justify-content: space-around;
+}
+.nav-tags li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;}
+.nav-tags li:hover{
+    background: #444;
+    transition: 0.3s;
+}
+.search{
+    background-color: #000;
+    border-radius: 10px;
+    margin-block:min(8vh,5%);
+    display: inline-flex;
+}
+.search img{
+width: 30px;
+margin: 10px;
+}
+.search input{
+    width: 0;
+    opacity: 0;
+    background-color: #444;
+    color: #fff;
+    margin: 15px;
+    border-radius: 20px;
+    outline:none;
+    border:none ;
+    font-size: 1.5em;
+    font-family:sans-serif ;
+    overflow: hidden;
+transition: width 0.5s ease, opacity 0.5s ease;
+}
+.search:hover input{
+    width: 150px;
+    opacity: 1;
+    display:inline-block ;
+}
+.containar{
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    flex-flow: wrap;
+    flex-shrink: 5px;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 400px;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 4%;
+    bottom:-23%;
+}
+.block{
+    
+    border: 1px solid rgb(255, 255, 0);
+    width: 300px;
+    height: 200px;
+    font-weight: bold;
+    font-family: sans-serif;
+     background:#fff url(../images/swimmingacademy.jpg) no-repeat center/ 100%;
+    border-radius: 25px;
+}
+.overlay{
+    width: 100%;
+    height: inherit;
+    font-family: sans-serif;
+    font-size: 2em;
+    padding: 10px;
+    background: rgb(255, 196, 0);
+    clip-path: circle(0% at 0% 0%);
+    overflow: hidden;
+    transition: 1s all;
+    border-radius: 25px;
+}
+.block:hover .overlay{
+    clip-path: circle(80% at 0% 0%);
+}
+/*----- sec about us--- */
+.about-us{
+    height: min-content(50vh,70vh);
+    margin-top: 20vh;
+}
+.about-us h1{
+    text-align: center;
+    color: rgb(0, 67, 167);
+    padding: 10px;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+.about-us hr{
+    width: 30%;
+    margin: auto;
+}
+.about-us article{
+    float: left;
+    width: 50%;
+    margin: 5vh;
+    padding: 5vh;
+    color: rgb(0, 67, 167);
+    font-family: sans-serif;
+}
+.about-us img{
+    float: right;
+    width: min-content(600px,8%);
+     margin:min(5vh,5%);
+}
+.about-us img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ;
+}
+.about-us article p{
+    padding: 10px;
+}
+/* -----our shud sec------- */
+ .schedule-sec{
+height: 50vh;
+margin: 15vh;
+clear: both;
+ }
+.schedule-sec h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: rgb(0, 67, 167);
+}
+.schedule-sec hr{
+    width: 40%;
+    margin: auto;
+}
+.schedule-sec table{
+    padding-top:2vh ;
+    border-collapse: collapse;
+    margin: 5vh;
+}
+.schedule-sec table tr{
+   height: 5vh;  
+}
+.schedule-sec table tr td{
+ background-color: #FFF;
+   width: 500vh;
+   padding-inline-start: 20%;}
+   .gray td{
+background-color: #ddd !important;
+   }
+   /* ------news sec----- */
+
+   .last-news{
+      height:min-content(90vh, 120vh);
+      width: 95%;
+      margin:auto ;
+   }
+.last-news h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: rgb(0, 67, 167);
+}
+.last-news hr{
+    width: 40%;
+    margin: auto;
+}
+.list-of-news {
+display: flex;
+justify-content: space-evenly;
+margin: min(25px,2%);
+ flex-wrap: wrap;
+}
+.box{
+    width: 400px;
+    height: 350px;
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+    overflow:auto;
+    box-shadow:1px 1px 5px #000;
+}
+.box img{
+    width: 350px;
+}
+.box h3,p{
+    text-align: left;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+.divsion1{
+background-color: rgb(255, 214, 11);
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.divsion1 img{
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    display: block;
+
+}
+.divsion1 iframe{
+     width: 600px;
+    height: auto;
+    padding: 10px;
+    display: block;
+}
+footer p{
+    text-align:center;
+    background: #000;
+    color: #FFF;
+}
